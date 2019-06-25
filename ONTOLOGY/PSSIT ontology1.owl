@@ -1,0 +1,1443 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#"
+     xml:base="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasCamera -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasCamera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#CAMERA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasDevice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasDevice">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isOwnedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasMACADDRESS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasMACADDRESS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEVICE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#MAC_ADDRESS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasOffice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasOffice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasPlace">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#NUMPAD"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasRDIFCARD -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasRDIFCARD">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ELEVATOR"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_CARD"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isFoundOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isFoundOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#END_DEVICE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isInDepartment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isInDepartment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EMPLOYEE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isLocatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#WORKSPACE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isLocatedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isLocatedOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isOwnedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isOwnedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#COMPUTERS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ownsRFID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ownsRFID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_CARD"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#worksIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#worksIn">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#WORKSPACE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasCameraID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasCameraID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#CAMERA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasComputerID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasComputerID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#COMPUTERS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasDeptName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasDeptName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasElevatorID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasElevatorID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ELEVATOR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasEmail">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasFloorID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasFloorID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasMACAddressID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasMACAddressID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#MAC_ADDRESS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasOfficeID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasOfficeID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasPassword -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasPassword">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EMPLOYEE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasPrinterID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasPrinterID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PRINTERS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasRFIDNO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasRFIDNO">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_CARD"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasSSN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasSSN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasServerID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasServerID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#SERVER"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasUserName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasUserName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EMPLOYEE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasWorkStationID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasWorkStationID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#WORKSTATION"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasWorkspaceID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasWorkspaceID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#WORKSPACE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ACCESSPOINT_EVENT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ACCESSPOINT_EVENT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EVENT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#BUILDING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#BUILDING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ORGANIZATION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#BUSINESS_PARTNER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#BUSINESS_PARTNER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#CAMERA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#CAMERA">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasCameraID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#SECURITY_COMPONENTS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#COMPUTERS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#COMPUTERS">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isOwnedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasComputerID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEVICE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#CONTRACTOR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#CONTRACTOR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasOffice"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isLocatedOn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasDeptName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ORGANIZATION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEVICE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEVICE">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasMACADDRESS"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#MAC_ADDRESS"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ORGANIZATION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ELEVATOR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ELEVATOR">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasRDIFCARD"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_CARD"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasElevatorID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#BUILDING"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EMPLOYEE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EMPLOYEE">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isInDepartment"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#worksIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#WORKSPACE"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasPassword"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasUserName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#END_DEVICE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#END_DEVICE">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isFoundOn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEVICE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EVENT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EVENT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PSSIT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasCamera"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#CAMERA"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasFloorID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#BUILDING"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#GREEN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#GREEN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#INCIDENT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#INCIDENT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#INCIDENT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PSSIT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#MAC_ADDRESS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#MAC_ADDRESS">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasMACAddressID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PSSIT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#NUMPAD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#NUMPAD">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasPlace"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#SECURITY_COMPONENTS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#NUMPAD_EVENT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#NUMPAD_EVENT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EVENT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasOfficeID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#BUILDING"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ORGANIZATION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ORGANIZATION">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PSSIT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasDevice"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#COMPUTERS"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasEmail"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasSSN"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ORGANIZATION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PRINTERS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PRINTERS">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasPrinterID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#END_DEVICE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PRINTER_EVENT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PRINTER_EVENT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EVENT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PSSIT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PSSIT"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#INCIDENT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_CARD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_CARD">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasRFIDNO"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PSSIT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_EVENT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_EVENT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EVENT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_READER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_READER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#SECURITY_COMPONENTS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#SECURITY_COMPONENTS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#SECURITY_COMPONENTS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PSSIT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#SERVER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#SERVER">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasServerID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#END_DEVICE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#SYSTEM_EVENT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#SYSTEM_EVENT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EVENT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#VISITOR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#VISITOR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PERSON"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#WORKSPACE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#WORKSPACE">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#isLocatedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#BUILDING"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#WORKSTATION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#WORKSTATION">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#hasWorkStationID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#END_DEVICE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#YELLOW -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#YELLOW">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#INCIDENT"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Administrative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Administrative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+        <hasDeptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Admin Dept.</hasDeptName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#CustomerService -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#CustomerService">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+        <hasDeptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Customer Service</hasDeptName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ELEVATOR"/>
+        <hasRDIFCARD rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID-A"/>
+        <hasElevatorID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01</hasElevatorID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ELEVATOR"/>
+        <hasRDIFCARD rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID-B"/>
+        <hasElevatorID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02</hasElevatorID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#ELEVATOR"/>
+        <hasRDIFCARD rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID-C"/>
+        <hasElevatorID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">03</hasElevatorID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+        <hasFloorID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFloorID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+        <hasFloorID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloorID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+        <hasFloorID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasFloorID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+        <hasFloorID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasFloorID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+        <hasFloorID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasFloorID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#FLOOR"/>
+        <hasFloorID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasFloorID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Finance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Finance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+        <hasDeptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finance Dept.</hasDeptName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Grace_Williams -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Grace_Williams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EMPLOYEE"/>
+        <hasDevice rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#GracieMAC"/>
+        <isInDepartment rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Sales"/>
+        <worksIn rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#301-B"/>
+        <hasEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gracie3@ss.com</hasEmail>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100152</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grace Williams</hasName>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gracie3</hasPassword>
+        <hasSSN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100-001-110</hasSSN>
+        <hasUserName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gracie</hasUserName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#GracieMAC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#GracieMAC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#COMPUTERS"/>
+        <hasMACADDRESS rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#02-38-36-95-DE-3D"/>
+        <isOwnedBy rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Grace_Williams"/>
+        <hasComputerID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</hasComputerID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#HR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#HR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+        <hasDeptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human Resources</hasDeptName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Legal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Legal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+        <hasOffice rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#207"/>
+        <isLocatedOn rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F2"/>
+        <hasDeptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Legal</hasDeptName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Logistics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Logistics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PeteMAC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PeteMAC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#COMPUTERS"/>
+        <hasMACADDRESS rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#44-62-EB-E2-CD-C6"/>
+        <isOwnedBy rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Peter_Frank"/>
+        <hasComputerID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">004</hasComputerID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Peter_Frank -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Peter_Frank">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#EMPLOYEE"/>
+        <hasDevice rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#PeteMAC"/>
+        <isInDepartment rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#R&amp;D"/>
+        <worksIn rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#409-A"/>
+        <hasEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pete@ss.com</hasEmail>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150310</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Frank</hasName>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pete77</hasPassword>
+        <hasSSN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">110-001-121</hasSSN>
+        <hasUserName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pete</hasUserName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID-A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID-A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_CARD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID-B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID-B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_CARD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID-C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID-C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#RFID_CARD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Sales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Sales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+        <hasOffice rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#301"/>
+        <hasOffice rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#302"/>
+        <isLocatedOn rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F3"/>
+        <hasDeptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sales</hasDeptName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Technical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#Technical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#001"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#004"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#02-38-36-95-DE-3D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#02-38-36-95-DE-3D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#MAC_ADDRESS"/>
+        <hasMACAddressID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02-38-36-95DE-3D</hasMACAddressID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#101"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#102"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#103"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#104 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#104"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#105 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#105"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#201"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#202 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#202"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#203 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#203"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#204 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#204"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#205 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#205"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#206 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#206"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#207 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#207"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#208 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#208"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#209 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#209"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#210 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#210"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#301 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#301">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE"/>
+        <hasOfficeID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">301</hasOfficeID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#301-B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#301-B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#WORKSPACE"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#301"/>
+        <hasWorkspaceID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">301-B</hasWorkspaceID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#302 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#302">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE"/>
+        <hasOfficeID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">302</hasOfficeID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#304 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#304"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#305 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#305"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#306 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#306"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#307 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#307"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#308 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#308"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#309 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#309"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#310 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#310"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#401 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#401"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#402 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#402"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#403 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#403"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#404 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#404"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#405 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#405"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#406 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#406"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#407 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#407"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#408 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#408"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#409 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#409">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE"/>
+        <hasOfficeID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">409</hasOfficeID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#409-A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#409-A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#WORKSPACE"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#409"/>
+        <hasWorkspaceID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">409-A</hasWorkspaceID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#410 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#410"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#44-62-EB-E2-CD-C6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#44-62-EB-E2-CD-C6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#MAC_ADDRESS"/>
+        <hasMACAddressID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">44-62-EB-E2-CD-C6</hasMACAddressID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#501 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#501">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#OFFICE"/>
+        <hasOfficeID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">501</hasOfficeID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#502 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#502"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#503 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#503"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#504 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#504"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#505 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#505"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#506 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#506"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#507 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#507"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#508 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#508"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#509 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#509"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#510 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#510"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#601 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#601"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#602 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#602"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#603 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#603"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#604 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#604"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#605 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#605"/>
+    
+
+
+    <!-- http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#R&amp;D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#R&amp;D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#DEPARTMENT"/>
+        <hasOffice rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#409"/>
+        <hasOffice rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#410"/>
+        <isLocatedOn rdf:resource="http://www.semanticweb.org/naomioko-jaja/ontologies/2018/10/securityontology#F4"/>
+        <hasDeptName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research and development</hasDeptName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
